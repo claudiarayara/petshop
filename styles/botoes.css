@@ -1,0 +1,304 @@
+/* Campo de busca */
+.campo-busca {
+    background-image: url('../assets/Lupa.svg');
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 16px center;
+    height: 62px;
+    background-color: var(--sombra);
+    padding: 1em 3em;
+    border: none;
+    border-radius: 8px;
+    width: 120%;
+    font-size: 16px;
+}
+
+.campo-busca::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--cinzinha);
+    font-size: 14px;
+}
+
+/* Botão "Entrar" */
+.botao {
+    display: flex;
+    align-items: center;
+    height: 62px;
+    background-color: var(--roxo);
+    color: var(--branco);
+    padding: 1em 3em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: auto;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.botao:hover {
+    background-color: var(--lilas);
+}
+
+/* Botões: Banho e Tosa, Veterinário, Adestramento e ClubPet */
+.botao-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    font-family: var(--fonte-destaque);
+    font-size: 24px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    width: 300px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: box-shadow 0.6s ease;
+}
+
+.botao-links-a {
+    text-decoration: none;
+}
+
+.azul {
+    color: var(--azul);
+    background-color: var(--azul20);
+}
+
+.botao-item.azul:hover {
+    box-shadow: inset 0 0 0 4px var(--azul);
+}
+
+.verde {
+    color: var(--verde);
+    background-color: var(--verde20);
+}
+
+.botao-item.verde:hover {
+    box-shadow: inset 0 0 0 4px var(--verde);
+}
+
+.rosa {
+    color: var(--rosa);
+    background-color: var(--rosa20);
+}
+
+.botao-item.rosa:hover {
+    box-shadow: inset 0 0 0 4px var(--rosa);
+}
+
+.laranja {
+    color: var(--laranja);
+    background-color: var(--laranja20);
+}
+
+.botao-item.laranja:hover {
+    box-shadow: inset 0 0 0 4px var(--laranja);
+}
+
+/* Botão de "Adicionar no Carrinho */
+.card-botao-add {
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 62px;
+    border-radius: 8px;
+    color: var(--branco);
+    background-color: var(--roxo);
+}
+
+.card-botao-add a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.card-botao-add:hover {
+    background-color: var(--lilas);
+}
+
+/* Inputs da parte de newsletter */
+.email-newsletter input[type="email"]::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--cinzinha);
+    font-size: 14px;
+}
+
+.email-newsletter input[type="email"] {
+    font-family: var(--fonte-principal);
+    color: var(--cinza);
+    width: 300px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--sombra);
+}
+
+.email-newsletter input[type="email"]:focus {
+    outline: none;
+}
+
+.selecionar-pet select {
+    font-family: var(--fonte-principal);
+    color: var(--cinzinha);
+    width: 200px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--sombra);
+    cursor: pointer;
+    appearance: none;
+    background-image: url('/assets/Dropdown.svg');
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+}
+
+.selecionar-pet select:focus {
+    outline: none;
+}
+
+.selecionar-pet select option {
+    background-color: var(--sombra);
+    padding: 1em;
+}
+
+/* Página de Login */
+input[type="email"],
+input[type="password"] {
+    font-family: var(--fonte-principal);
+    width: 100%;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    background-color: var(--sombra);
+    border: none;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input[type="password"] {
+    background-image: url('/assets/Invisivel.svg');
+    background-position: right 24px top 50%;
+    background-repeat: no-repeat;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: var(--cinzinha);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    color: var(--cinza);
+}
+
+.login-btn {
+    font-family: var(--fonte-principal);
+    width: 100%;
+    height: 62px;
+    margin: 1em;
+    padding: 1em;
+    background-color: var(--roxo);
+    color: var(--branco);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.login-btn:hover {
+    background-color: var(--lilas);
+}
+
+/* Tela de Cadastro */
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"] {
+    font-family: var(--fonte-principal);
+    width: 100%;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    background-color: var(--sombra);
+    border: none;
+    padding: 1em;
+    margin: 0 1em 2em 1em;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus {
+    outline: none;
+    color: var(--cinza);
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder {
+    color: var(--cinzinha);
+}
+
+/* Estilo para o checkbox */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+/* Esconde o checkbox original */
+.checkbox-container input[type="checkbox"] {
+    display: none;
+}
+
+/* Estilo para o label que irá simular o nosso checkbox */
+.checkbox-container label {
+    position: relative;
+    padding-left: 32px; /* Espaço para o pseudo-checkbox */
+    cursor: pointer;
+    display: inline-block;
+    line-height: 24px; /* Ajuste conforme necessário */
+}
+
+/* Adiciona um pseudo-elemento para simular o checkbox não marcado */
+.checkbox-container label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px; /* Tamanho do pseudo-checkbox */
+    height: 24px; /* Tamanho do pseudo-checkbox */
+    background-image: url('/assets/Checkbox.svg'); /* Sua imagem SVG para o estado não marcado */
+    background-size: cover; /* Certifique-se de que o SVG cubra o pseudo-elemento */
+    border-radius: 4px; /* Borda arredondada, se necessário */
+}
+
+/* Quando o checkbox está marcado, muda o SVG */
+.checkbox-container input[type="checkbox"]:checked + label:before {
+    background-image: url('/assets/Checkbox-check.svg'); /* Sua imagem SVG para o estado marcado */
+}

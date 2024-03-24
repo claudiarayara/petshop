@@ -1,0 +1,848 @@
+<!-- Escritório de Projetos Fase 02 -->
+<!-- Aluna: Claudia Rayara -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ícone que aparece na aba antes do título da página; -->
+    <link rel="shortcut icon" href="./assets/Favicon.svg" type="image/x-icon">
+    <title>PetShop - Claudia Rayara</title>
+
+    <!-- Resetando os estilos pré-definidos; -->
+    <link rel="stylesheet" href="/reset.css">
+
+    <!-- CND do Swiper para o Carrossel; -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <!-- CDN CSS do Bootstrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
+    <!-- Embed code do GoogleFonts das fontes usadas do projeto do Figma; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@400;700&family=Titan+One&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilização do meu projeto; -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <main>
+        <!-- Cabeçalho (header); -->
+        <header class=cabecalho-menu>
+
+            <div class="cabecalho">
+    
+                <!-- Logo do cabeçalho -->
+                <div class="cabecalho-nav">
+                    <a href="home.html"><img src="./assets/Logo1.svg" alt="Logo da PetShop"></a>
+                </div>
+    
+                <!-- Barra de busca -->
+                <div class="cabecalho-nav">
+                    <form action="#" method="get">
+                        <input type="search" name="q" placeholder="O que seu pet precisa?" class="campo-busca">
+                    </form>
+                </div>
+    
+                <!-- Icones de Favorito e Carrinho -->
+                <div class="cabecalho-nav">
+                    <a href="#" class="icone-nav">
+                        <img src="./assets/Coração.svg" alt="Ícone de Favorito" style="width: 24px;">
+                    </a>
+                    <a href="#" class="icone-nav">
+                        <img src="./assets/Carrinho.svg" alt="Ícone de Carrinho" style="width: 24px;">
+                    </a>
+                </div>
+    
+                <!-- Perfil -->
+                <div class="navbar">
+                    <div class="dropdown">
+                        <img src="/assets/Avatar-ClaudiaRayara.svg" alt="Foto de um avatar feminino" style="width: 100%;">
+                        <div class="dropdown-content">
+                            <a href="error-perfil.html">Meus Pedidos</a>
+                            <a href="error-perfil.html">Assinatura</a>
+                            <a href="error-perfil.html">Meus Pets</a>
+                            <a href="error-perfil.html">Meus Dados</a>
+                            <a class="sair" href="index.html">Sair</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <!-- Menu de links para outras páginas -->
+            <div class="menu">
+                <ul class="menu-links">
+    
+                    <li class="menu-item">
+                        <div class="menu-item-a cinza">
+                            <a href="error-perfil.html">Produtos</a>
+                        </div>
+                    </li>
+    
+                    <li class="menu-item">
+                        <div class="menu-item-a cinza">
+                            <a href="error-perfil.html">Serviços</a>
+                        </div>
+                    </li>
+    
+                    <li class="menu-item">
+                        <div class="menu-item-a cinza">
+                            <a href="error-perfil.html">Promoções</a>
+                        </div>
+                    </li>
+    
+                    <li class="menu-item">
+                        <div class="menu-item-a cinza">
+                            <a href="error-perfil.html">ClubPet</a>
+                        </div>
+                    </li>
+    
+                </ul>
+            </div>
+        </header>
+        <!-- Divisor de página -->
+        <div class="divider">
+            <div class="img-line">
+                <img src="/assets/Line.svg" alt="Divisor de página" style="width: 100%;">
+            </div>
+        </div>
+
+        <!-- Títulos de destaque -->
+        <section class="titulos-pagina">
+            <h2 class="pay-32 titulo">Produtos para Cachorro</h2>
+        </section>
+
+        <!-- Car dos Produtos Recomendados -->
+        <section class="produto">
+
+            <div class="card-produto">
+
+                <div class="img-produto">
+                    <img src="/assets/RaçãoCachorro2.svg"
+                        alt="Ração Úmida Pedigree para Cães Filhotes Sabor Carne - 100g">
+                    <img src="/assets/Coração.svg" alt="Ícone de coração para adicionar aos favoritos"
+                        style="width: 24px;">
+                </div>
+
+                <div class="descricao-produto">
+                    <p>Ração Úmida Pedigree para Cães Filhotes Sabor Carne - 100g</p>
+                </div>
+
+                <div class="descricao-valor">
+                    <p class="pop-bold-20">R$5,90</p>
+                    <!-- <p class="pop-bold-10 descricao-ou">ou em até</p> 
+                    <p class="pop-bold-20"> 3x de R$0,00</p> -->
+                </div>
+
+                <div class="descricao-valorclub">
+                    <div class="valorclub">
+                        <div class="club-img">
+                            <img src="/assets/Brilho.svg" alt="Ícone de estrelas brilhando">
+                        </div>
+                        <div class="preco-club">
+                            <p class="pop-bold-20 roxo">R$4,72</p>
+                            <!-- <p class="pop-bold-10 roxo descricao-ou">ou em até</p>
+                            <p class="pop-bold-20 roxo"> 3x de R$0,00</p> -->
+                        </div>
+                    </div>
+                    <p class="pop-10 roxo">Para assinantes do ClubPet</p>
+                </div>
+
+                <div class="card-botao">
+                    <button class="pop-bold-20 card-botao-add"><a href="#">Ver Produto</a></button>
+                    <a href="#"><img src="/assets/Carrinho.svg" alt="Ícone de carrinho de compra"></a>
+                </div>
+            </div>
+
+            <div class="card-produto">
+
+                <div class="img-produto">
+                    <img src="/assets/RaçãoCachorro3.svg"
+                        alt="Ração Úmida Pedigree para Cães Adultos Sabor Frango - 100g">
+                    <img src="/assets/Coração.svg" alt="Ícone de coração para adicionar aos favoritos"
+                        style="width: 24px;">
+                </div>
+
+                <div class="descricao-produto">
+                    <p>Ração Úmida Pedigree para Cães Adultos Sabor Frango - 100g</p>
+                </div>
+
+                <div class="descricao-valor">
+                    <p class="pop-bold-20">R$5,90</p>
+                    <!-- <p class="pop-bold-10 descricao-ou">ou em até</p> 
+                    <p class="pop-bold-20"> 3x de R$0,00</p> -->
+                </div>
+
+                <div class="descricao-valorclub">
+                    <div class="valorclub">
+                        <div class="club-img">
+                            <img src="/assets/Brilho.svg" alt="Ícone de estrelas brilhando">
+                        </div>
+                        <div class="preco-club">
+                            <p class="pop-bold-20 roxo">R$4,72</p>
+                            <!-- <p class="pop-bold-10 roxo descricao-ou">ou em até</p>
+                            <p class="pop-bold-20 roxo"> 3x de R$0,00</p> -->
+                        </div>
+                    </div>
+                    <p class="pop-10 roxo">Para assinantes do ClubPet</p>
+                </div>
+
+                <div class="card-botao">
+                    <button class="pop-bold-20 card-botao-add"><a href="#">Ver Produto</a></button>
+                    <a href="#"><img src="/assets/Carrinho.svg" alt="Ícone de carrinho de compra"></a>
+                </div>
+            </div>
+
+            <div class="card-produto">
+
+                <div class="img-produto">
+                    <img src="/assets/RaçãoCachorro1.svg"
+                        alt="Ração Pedigree para Cães Adultos de Grande Porte - 10,1kg">
+                    <img src="/assets/Coração.svg" alt="Ícone de coração para adicionar aos favoritos"
+                        style="width: 24px;">
+                </div>
+
+                <div class="descricao-produto">
+                    <p>Ração Pedigree para Cães Adultos de Grande Porte - 10,1kg</p>
+                </div>
+
+                <div class="descricao-valor">
+                    <p class="pop-bold-20">R$160,90</p>
+                    <p class="pop-bold-10 descricao-ou">ou em até</p>
+                    <p class="pop-bold-20">3x de R$53,63</p>
+                </div>
+
+                <div class="descricao-valorclub">
+                    <div class="valorclub">
+                        <div class="club-img">
+                            <img src="/assets/Brilho.svg" alt="Ícone de estrelas brilhando">
+                        </div>
+                        <div class="preco-club">
+                            <p class="pop-bold-20 roxo">R$120,68</p>
+                            <p class="pop-bold-10 roxo descricao-ou">ou em até</p>
+                            <p class="pop-bold-20 roxo">3x de R$40,23</p>
+                        </div>
+                    </div>
+                    <p class="pop-10 roxo">Para assinantes do ClubPet</p>
+                </div>
+
+                <div class="card-botao">
+                    <button class="pop-bold-20 card-botao-add"><a href="#">Ver Produto</a></button>
+                    <a href="#"><img src="/assets/Carrinho.svg" alt="Ícone de carrinho de compra"></a>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <br>
+
+        <!-- Títulos de destaque -->
+        <section class="titulos-pagina">
+            <h2 class="pay-32 titulo">Produtos para Gatos</h2>
+        </section>
+        
+
+        <!-- Car dos Produtos Recomendados -->
+        <section class="produto">
+
+            <div class="card-produto">
+
+                <div class="img-produto">
+                    <img src="/assets/RaçãoGato1.svg"
+                        alt="Ração Whiskas para Gatos Filhotes Sabor Carne e Leite - 500g">
+                    <img src="/assets/Coração.svg" alt="Ícone de coração para adicionar aos favoritos"
+                        style="width: 24px;">
+                </div>
+
+                <div class="descricao-produto">
+                    <p>Ração Whiskas para Gatos Filhotes Sabor Carne e Leite - 500g</p>
+                </div>
+
+                <div class="descricao-valor">
+                    <p class="pop-bold-20">R$20,90</p>
+                    <!-- <p class="pop-bold-10 descricao-ou">ou em até</p> 
+                    <p class="pop-bold-20"> 3x de R$0,00</p> -->
+                </div>
+
+                <div class="descricao-valorclub">
+                    <div class="valorclub">
+                        <div class="club-img">
+                            <img src="/assets/Brilho.svg" alt="Ícone de estrelas brilhando">
+                        </div>
+                        <div class="preco-club">
+                            <p class="pop-bold-20 roxo">R$18,80</p>
+                            <!-- <p class="pop-bold-10 roxo descricao-ou">ou em até</p>
+                            <p class="pop-bold-20 roxo"> 3x de R$0,00</p> -->
+                        </div>
+                    </div>
+                    <p class="pop-10 roxo">Para assinantes do ClubPet</p>
+                </div>
+
+                <div class="card-botao">
+                    <button class="pop-bold-20 card-botao-add"><a href="#">Ver Produto</a></button>
+                    <a href="#"><img src="/assets/Carrinho.svg" alt="Ícone de carrinho de compra"></a>
+                </div>
+            </div>
+
+            <div class="card-produto">
+
+                <div class="img-produto">
+                    <img src="/assets/RaçãoGato2.svg" alt="Ração Whiskas para Gatos Adultos Sabor Frango e Leite - 3kg">
+                    <img src="/assets/Coração.svg" alt="Ícone de coração para adicionar aos favoritos"
+                        style="width: 24px;">
+                </div>
+
+                <div class="descricao-produto">
+                    <p>Ração Whiskas para Gatos Adultos Sabor Frango e Leite - 3kg</p>
+                </div>
+
+                <div class="descricao-valor">
+                    <p class="pop-bold-20">R$60,90</p>
+                    <p class="pop-bold-10 descricao-ou">ou em até</p>
+                    <p class="pop-bold-20">3x de R$20,30</p>
+                </div>
+
+                <div class="descricao-valorclub">
+                    <div class="valorclub">
+                        <div class="club-img">
+                            <img src="/assets/Brilho.svg" alt="Ícone de estrelas brilhando">
+                        </div>
+                        <div class="preco-club">
+                            <p class="pop-bold-20 roxo">R$54,80</p>
+                            <p class="pop-bold-10 roxo descricao-ou">ou em até</p>
+                            <p class="pop-bold-20 roxo">3x de R$18,27</p>
+                        </div>
+                    </div>
+                    <p class="pop-10 roxo">Para assinantes do ClubPet</p>
+                </div>
+
+                <div class="card-botao">
+                    <button class="pop-bold-20 card-botao-add"><a href="#">Ver Produto</a></button>
+                    <a href="#"><img src="/assets/Carrinho.svg" alt="Ícone de carrinho de compra"></a>
+                </div>
+            </div>
+
+            <div class="card-produto">
+
+                <div class="img-produto">
+                    <img src="/assets/RaçãoGato3.svg"
+                        alt="Ração Úmida Whiskas Sachê para Gatos Adultos Sabor Peixe - 85g">
+                    <img src="/assets/Coração.svg" alt="Ícone de coração para adicionar aos favoritos"
+                        style="width: 24px;">
+                </div>
+
+                <div class="descricao-produto">
+                    <p>Ração Úmida Whiskas Sachê para Gatos Adultos Sabor Peixe - 85g</p>
+                </div>
+
+                <div class="descricao-valor">
+                    <p class="pop-bold-20">R$3,50</p>
+                    <!-- <p class="pop-bold-10 descricao-ou">ou em até</p> 
+                    <p class="pop-bold-20">3x de R$0,00</p> -->
+                </div>
+
+                <div class="descricao-valorclub">
+                    <div class="valorclub">
+                        <div class="club-img">
+                            <img src="/assets/Brilho.svg" alt="Ícone de estrelas brilhando">
+                        </div>
+                        <div class="preco-club">
+                            <p class="pop-bold-20 roxo">R$2,80</p>
+                            <!-- <p class="pop-bold-10 roxo descricao-ou">ou em até</p>
+                            <p class="pop-bold-20 roxo"> 3x de R$0,00</p> -->
+                        </div>
+                    </div>
+                    <p class="pop-10 roxo">Para assinantes do ClubPet</p>
+                </div>
+
+                <div class="card-botao">
+                    <button class="pop-bold-20 card-botao-add"><a href="#">Ver Produto</a></button>
+                    <a href="#"><img src="/assets/Carrinho.svg" alt="Ícone de carrinho de compra"></a>
+                </div>
+            </div>
+
+        </section>
+
+        <br>
+        <br>
+
+        <!-- Títulos de destaque -->
+        <section class="titulos-pagina">
+            <h2 class="pay-32 titulo">Rações Secas</h2>
+        </section>
+
+        <section class="produto">
+
+            <div class="card-produto">
+
+                <div class="img-produto">
+                    <img src="/assets/RaçãoGato1.svg"
+                        alt="Ração Whiskas para Gatos Filhotes Sabor Carne e Leite - 500g">
+                    <img src="/assets/Coração.svg" alt="Ícone de coração para adicionar aos favoritos"
+                        style="width: 24px;">
+                </div>
+
+                <div class="descricao-produto">
+                    <p>Ração Whiskas para Gatos Filhotes Sabor Carne e Leite - 500g</p>
+                </div>
+
+                <div class="descricao-valor">
+                    <p class="pop-bold-20">R$20,90</p>
+                    <!-- <p class="pop-bold-10 descricao-ou">ou em até</p> 
+                    <p class="pop-bold-20"> 3x de R$0,00</p> -->
+                </div>
+
+                <div class="descricao-valorclub">
+                    <div class="valorclub">
+                        <div class="club-img">
+                            <img src="/assets/Brilho.svg" alt="Ícone de estrelas brilhando">
+                        </div>
+                        <div class="preco-club">
+                            <p class="pop-bold-20 roxo">R$18,80</p>
+                            <!-- <p class="pop-bold-10 roxo descricao-ou">ou em até</p>
+                            <p class="pop-bold-20 roxo"> 3x de R$0,00</p> -->
+                        </div>
+                    </div>
+                    <p class="pop-10 roxo">Para assinantes do ClubPet</p>
+                </div>
+
+                <div class="card-botao">
+                    <button class="pop-bold-20 card-botao-add"><a href="#">Ver Produto</a></button>
+                    <a href="#"><img src="/assets/Carrinho.svg" alt="Ícone de carrinho de compra"></a>
+                </div>
+            </div>
+
+            <div class="card-produto">
+
+                <div class="img-produto">
+                    <img src="/assets/RaçãoGato2.svg" alt="Ração Whiskas para Gatos Adultos Sabor Frango e Leite - 3kg">
+                    <img src="/assets/Coração.svg" alt="Ícone de coração para adicionar aos favoritos"
+                        style="width: 24px;">
+                </div>
+
+                <div class="descricao-produto">
+                    <p>Ração Whiskas para Gatos Adultos Sabor Frango e Leite - 3kg</p>
+                </div>
+
+                <div class="descricao-valor">
+                    <p class="pop-bold-20">R$60,90</p>
+                    <p class="pop-bold-10 descricao-ou">ou em até</p>
+                    <p class="pop-bold-20">3x de R$20,30</p>
+                </div>
+
+                <div class="descricao-valorclub">
+                    <div class="valorclub">
+                        <div class="club-img">
+                            <img src="/assets/Brilho.svg" alt="Ícone de estrelas brilhando">
+                        </div>
+                        <div class="preco-club">
+                            <p class="pop-bold-20 roxo">R$54,80</p>
+                            <p class="pop-bold-10 roxo descricao-ou">ou em até</p>
+                            <p class="pop-bold-20 roxo">3x de R$18,27</p>
+                        </div>
+                    </div>
+                    <p class="pop-10 roxo">Para assinantes do ClubPet</p>
+                </div>
+
+                <div class="card-botao">
+                    <button class="pop-bold-20 card-botao-add"><a href="#">Ver Produto</a></button>
+                    <a href="#"><img src="/assets/Carrinho.svg" alt="Ícone de carrinho de compra"></a>
+                </div>
+            </div>
+            
+            <div class="card-produto">
+
+                <div class="img-produto">
+                    <img src="/assets/RaçãoCachorro1.svg"
+                        alt="Ração Pedigree para Cães Adultos de Grande Porte - 10,1kg">
+                    <img src="/assets/Coração.svg" alt="Ícone de coração para adicionar aos favoritos"
+                        style="width: 24px;">
+                </div>
+
+                <div class="descricao-produto">
+                    <p>Ração Pedigree para Cães Adultos de Grande Porte - 10,1kg</p>
+                </div>
+
+                <div class="descricao-valor">
+                    <p class="pop-bold-20">R$160,90</p>
+                    <p class="pop-bold-10 descricao-ou">ou em até</p>
+                    <p class="pop-bold-20">3x de R$53,63</p>
+                </div>
+
+                <div class="descricao-valorclub">
+                    <div class="valorclub">
+                        <div class="club-img">
+                            <img src="/assets/Brilho.svg" alt="Ícone de estrelas brilhando">
+                        </div>
+                        <div class="preco-club">
+                            <p class="pop-bold-20 roxo">R$120,68</p>
+                            <p class="pop-bold-10 roxo descricao-ou">ou em até</p>
+                            <p class="pop-bold-20 roxo">3x de R$40,23</p>
+                        </div>
+                    </div>
+                    <p class="pop-10 roxo">Para assinantes do ClubPet</p>
+                </div>
+
+                <div class="card-botao">
+                    <button class="pop-bold-20 card-botao-add"><a href="#">Ver Produto</a></button>
+                    <a href="#"><img src="/assets/Carrinho.svg" alt="Ícone de carrinho de compra"></a>
+                </div>
+            </div>
+
+        </section>
+
+        <br>
+        <br>
+
+        <!-- Títulos de destaque -->
+        <section class="titulos-pagina">
+            <h2 class="pay-32 titulo">Rações Úmidas</h2>
+        </section>
+
+        <section class="produto">
+
+            <div class="card-produto">
+
+                <div class="img-produto">
+                    <img src="/assets/RaçãoGato3.svg"
+                        alt="Ração Úmida Whiskas Sachê para Gatos Adultos Sabor Peixe - 85g">
+                    <img src="/assets/Coração.svg" alt="Ícone de coração para adicionar aos favoritos"
+                        style="width: 24px;">
+                </div>
+
+                <div class="descricao-produto">
+                    <p>Ração Úmida Whiskas Sachê para Gatos Adultos Sabor Peixe - 85g</p>
+                </div>
+
+                <div class="descricao-valor">
+                    <p class="pop-bold-20">R$3,50</p>
+                    <!-- <p class="pop-bold-10 descricao-ou">ou em até</p> 
+                    <p class="pop-bold-20">3x de R$0,00</p> -->
+                </div>
+
+                <div class="descricao-valorclub">
+                    <div class="valorclub">
+                        <div class="club-img">
+                            <img src="/assets/Brilho.svg" alt="Ícone de estrelas brilhando">
+                        </div>
+                        <div class="preco-club">
+                            <p class="pop-bold-20 roxo">R$2,80</p>
+                            <!-- <p class="pop-bold-10 roxo descricao-ou">ou em até</p>
+                            <p class="pop-bold-20 roxo"> 3x de R$0,00</p> -->
+                        </div>
+                    </div>
+                    <p class="pop-10 roxo">Para assinantes do ClubPet</p>
+                </div>
+
+                <div class="card-botao">
+                    <button class="pop-bold-20 card-botao-add"><a href="#">Ver Produto</a></button>
+                    <a href="#"><img src="/assets/Carrinho.svg" alt="Ícone de carrinho de compra"></a>
+                </div>
+            </div>
+
+            <div class="card-produto">
+
+                <div class="img-produto">
+                    <img src="/assets/RaçãoCachorro2.svg"
+                        alt="Ração Úmida Pedigree para Cães Filhotes Sabor Carne - 100g">
+                    <img src="/assets/Coração.svg" alt="Ícone de coração para adicionar aos favoritos"
+                        style="width: 24px;">
+                </div>
+
+                <div class="descricao-produto">
+                    <p>Ração Úmida Pedigree para Cães Filhotes Sabor Carne - 100g</p>
+                </div>
+
+                <div class="descricao-valor">
+                    <p class="pop-bold-20">R$5,90</p>
+                    <!-- <p class="pop-bold-10 descricao-ou">ou em até</p> 
+                    <p class="pop-bold-20"> 3x de R$0,00</p> -->
+                </div>
+
+                <div class="descricao-valorclub">
+                    <div class="valorclub">
+                        <div class="club-img">
+                            <img src="/assets/Brilho.svg" alt="Ícone de estrelas brilhando">
+                        </div>
+                        <div class="preco-club">
+                            <p class="pop-bold-20 roxo">R$4,72</p>
+                            <!-- <p class="pop-bold-10 roxo descricao-ou">ou em até</p>
+                            <p class="pop-bold-20 roxo"> 3x de R$0,00</p> -->
+                        </div>
+                    </div>
+                    <p class="pop-10 roxo">Para assinantes do ClubPet</p>
+                </div>
+
+                <div class="card-botao">
+                    <button class="pop-bold-20 card-botao-add"><a href="#">Ver Produto</a></button>
+                    <a href="#"><img src="/assets/Carrinho.svg" alt="Ícone de carrinho de compra"></a>
+                </div>
+            </div>
+
+            <div class="card-produto">
+
+                <div class="img-produto">
+                    <img src="/assets/RaçãoCachorro3.svg"
+                        alt="Ração Úmida Pedigree para Cães Adultos Sabor Frango - 100g">
+                    <img src="/assets/Coração.svg" alt="Ícone de coração para adicionar aos favoritos"
+                        style="width: 24px;">
+                </div>
+
+                <div class="descricao-produto">
+                    <p>Ração Úmida Pedigree para Cães Adultos Sabor Frango - 100g</p>
+                </div>
+
+                <div class="descricao-valor">
+                    <p class="pop-bold-20">R$5,90</p>
+                    <!-- <p class="pop-bold-10 descricao-ou">ou em até</p> 
+                    <p class="pop-bold-20"> 3x de R$0,00</p> -->
+                </div>
+
+                <div class="descricao-valorclub">
+                    <div class="valorclub">
+                        <div class="club-img">
+                            <img src="/assets/Brilho.svg" alt="Ícone de estrelas brilhando">
+                        </div>
+                        <div class="preco-club">
+                            <p class="pop-bold-20 roxo">R$4,72</p>
+                            <!-- <p class="pop-bold-10 roxo descricao-ou">ou em até</p>
+                            <p class="pop-bold-20 roxo"> 3x de R$0,00</p> -->
+                        </div>
+                    </div>
+                    <p class="pop-10 roxo">Para assinantes do ClubPet</p>
+                </div>
+
+                <div class="card-botao">
+                    <button class="pop-bold-20 card-botao-add"><a href="#">Ver Produto</a></button>
+                    <a href="#"><img src="/assets/Carrinho.svg" alt="Ícone de carrinho de compra"></a>
+                </div>
+            </div>
+
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+
+        <!-- Sessão superior com logo, links e rede social -->
+        <div class="cabecalho-links-icons">
+
+            <div class="logo">
+                <img src="/assets/Logo2.svg" alt="Logo da PetShop">
+            </div>
+
+            <div class="linksmenu">
+                <ul class="menu-links">
+
+                    <li class="menu-item-rodape">
+                        <div class="menu-item-a branco">
+                            <a href="error-perfil.html">Produtos</a>
+                        </div>
+                    </li>
+
+                    <li class="menu-item-rodape">
+                        <div class="menu-item-a branco">
+                            <a href="error-perfil.html">Serviços</a>
+                        </div>
+                    </li>
+
+                    <li class="menu-item-rodape">
+                        <div class="menu-item-a branco">
+                            <a href="error-perfil.html">Promoções</a>
+                        </div>
+                    </li>
+
+                    <li class="menu-item-rodape">
+                        <div class="menu-item-a branco">
+                            <a href="error-perfil.html">ClubPet</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="redes-social">
+                <div class="icon-social">
+                    <a href="https://github.com/claudiarayara" target="_blank"><img src="/assets/Facebook.svg" alt="Ícone do Facebook"></a>
+                </div>
+                <div class="icon-social">
+                    <a href="https://github.com/claudiarayara" target="_blank"><img src="/assets/Instagram.svg" alt="Ícone do Instagram"></a>
+                </div>
+                <div class="icon-social">
+                    <a href="https://github.com/claudiarayara" target="_blank"><img src="/assets/TikTok.svg" alt="Ícone do TikTok"></a>
+                </div>
+                <div class="icon-social">
+                    <a href="https://www.linkedin.com/in/claudiarayara/" target="_blank"><img src="/assets/LinkedIn.svg" alt="Ícone do LinkedIn"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Campo para cadastro de e-mail (newsletter) -->
+        <div class="cabecalho-newsletter">
+            <div class="cadastre">
+                <h2 class="pop-bold-16 roxo">Cadastre-se e receba nossas promoções e novidades antes de todo mundo.</h2>
+                <p class="pop-10 cinza">Ao se cadastrar você concorda com a nossa <a class="lilas" href="#">política de
+                        privacidade.</a></p>
+            </div>
+            <div>
+                <div class="email-newsletter">
+                    <!-- Campo E-mail -->
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+            </div>
+            <div>
+                <div class="selecionar-pet ls-custom-select">
+                    <select id="tipo-animal" name="tipo-animal">
+                        <option value="" disabled selected>Seu pet</option>
+                        <option value="Cachorro">Cachorro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Roedor">Roedor</option>
+                        <option value="Pássaro">Pássaro</option>
+                        <option value="Peixe">Peixe</option>
+                        <option value="Outros Pets">Outros Pets</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div class="botao-cadastrar">
+                    <button class="botao">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mapa-site">
+            <div class="mapa-site-links">
+                <h3 class="pop-bold-14">Ajuda</h3>
+                <ul>
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Atendimento</a>
+                    </li>
+
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Meus Pedidos</a>
+                    </li>
+
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Meu Cadastro</a>
+                    </li>
+
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Cadastro Pet</a>
+                    </li>
+
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Minhas Assinaturas</a>
+                    </li>
+
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Ouvidoria</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="mapa-site-links">
+                <h3 class="pop-bold-14">Nossas Políticas</h3>
+                <ul>
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Entrega e Frete</a>
+                    </li>
+
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Pagamento e Reembolso</a>
+                    </li>
+
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Troca e Devolução</a>
+                    </li>
+
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Campanhas e Promoções</a>
+                    </li>
+
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Política de Privacidade</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mapa-site-links">
+                <h3 class="pop-bold-14">Aqui Você Encontra</h3>
+                <ul>
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Assinatura do ClubPet</a>
+                    </li>
+
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Banho e Tosa</a>
+                    </li>
+
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Atendimento Veterinário</a>
+                    </li>
+
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Serviço de Tele-Busca</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mapa-site-links">
+                <h3 class="pop-bold-14">Institucional</h3>
+                <ul>
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Sobre nós</a>
+                    </li>
+
+                    <li class="lista-links pop-14">
+                        <a class="" href="error-perfil.html">Trabalhe Conosco</a>
+                    </li>
+
+                    <li class="lista-links pop-14">
+                        <a class="" href="#">Mapa do Site</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="qr-code">
+                <img src="/assets/QRCode.svg" alt="Imagem de um QR-Code e botões da AppStore e GooglePlay para download do aplicativo">
+            </div>
+        </div>
+
+        <div class="divisor">
+            <img src="/assets/Divisor.svg" alt="Imagem de uma linha divisora" style="width: 100%;">
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &#169; 2024 <strong>Claudia Rayara</strong> - PetShop</p>
+            <p>Projeto fictício sem fins comerciais.</p>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+    <!-- CND JD do Swiper para o Carrossel; -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- CDN JS do Bootstrap -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+/* Importando meus arquivos CSS */
+@import url("/styles/flex.css");
+@import url("/styles/botoes.css");
+@import url("/styles/perfil.css");
+
+/* Definindo minhas variáveis */
+:root {
+    --branco: #fff;
+    --sombra: #F4F4F4;
+    --cinzinha: #B0B0B0;
+    --cinza: #323232;
+    --roxo: #4D47C3;
+    --lilas: #9486FF;
+    --lilas20: rgba(148, 134, 255, 0.2);
+    --lilasclaro: #D1CBFF;
+    --azul: #00519C;
+    --azul20: rgba(0, 81, 156, 0.2);
+    --azul60: rgba(0, 81, 156, 0.6);
+    --amarelo: #FAB31B;
+    --amarelo20: rgba(250, 179, 27, 0.2);
+    --laranja: #EB7100;
+    --laranja20: rgba(235, 113, 0, 0.2);
+    --verde: #458A00;
+    --verde20: rgba(69, 138, 0, 0.2);
+    --rosa: #D3004C;
+    --rosa20: rgba(211, 0, 76, 0.2);
+    --fonte-principal: "Poppins";
+    --fonte-secundaria: "Paytone One";
+    --fonte-destaque: "Titan One";
+}
+
+/* Passando as informações que eu quero que a página tenha por padrão */
+body {
+    background-color: var(--branco);
+    font-family: var(--fonte-principal);
+    color: var(--cinza);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* Definição dos estilos de fonte por classe */
+.pop-10 {
+    font-size: 10px;
+}
+
+.pop-14 {
+    font-size: 14px;
+}
+
+.pop-bold-10 {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.pop-bold-16 {
+    font-weight: 700;
+}
+
+.pop-bold-14 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.pop-bold-20 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pop-bold-30 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.pay-32 {
+    font-family: var(--fonte-secundaria);
+    font-size: 32px;
+}
+
+.pay-48 {
+    font-family: var(--fonte-secundaria);
+    font-size: 48px;
+}
+
+/* Definição das cores por classe */
+.branco {
+    color: var(--branco);
+}
+
+.cinzinha {
+    color: var(--cinzinha);
+}
+
+.cinza {
+    color: var(--cinza);
+}
+
+.roxo {
+    color: var(--roxo);
+}
+
+.lilas {
+    color: var(--lilas);
+}
+
+.rosa {
+    color: var(--rosa);
+}
+
+/* Centralizando o carrossel e aplicando uma cor aos pagination */
+.carrossel {
+    text-align: center;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--amarelo);
+}
+
+/* Títulos de Destaque, etc */
+.titulo {
+    padding: 1em 2em;
+}
+
+.divider {
+    padding: 0 5em;
+}
+
+/* Banner sobre App */
+.banner-img img {
+    padding-top: 2em;
+    text-align: center;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: var(--roxo);
+    color: var(--branco);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 2em 5em;
+}
+
+.cabecalho-newsletter {
+    background-color: var(--branco);
+    padding: 2em;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mapa-site {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2em 0;
+}
+
+.mapa-site-links {
+    width: 200px;
+    height: 200px;
+}
+
+.lista-links {
+    padding-top: 0.5em;
+}
+
+.lista-links a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.copyright p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1rem;
+}
+
+.copyright strong {
+    font-weight: 700;
+}
+
+/* Imagem da tela de Erro */
+.img-error {
+    padding: 2em 5em;
+}
+
+/* Página de Login */
+.cabecalho-login {
+    background-color: var(--roxo);
+    padding: 2em 5em;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.acessar-conta {
+    text-align: center;
+    padding: 1em;
+    width: 400px;
+}
+
+.esqueci-senha {
+    text-align: right;
+}
+
+.esqueci-senha a {
+    text-decoration: none;
+}
+
+.cadastro {
+    text-align: left;
+    padding: 1em;
+    line-height: 1.5rem;
+}
+
+.cadastro a {
+    text-decoration: none;
+    color: var(--roxo);
+}
+
+.cadastro a:hover {
+    color: var(--lilas);
+}
+
+/* Tela de Cadastro */
+.login {
+    text-align: center;
+}
+
+.criar-conta {
+    text-align: center;
+    padding: 1em;
+    width: 400px;
+}
+
+.criar-conta-titulo {
+    padding-bottom: 2em;
+}
+
+.criar-conta h3 {
+    text-align: left;
+    padding-left: 1em;
+}

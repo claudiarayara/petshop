@@ -1,0 +1,283 @@
+/* Organizando o display do cabeçalho; */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em 5em;
+}
+
+.cabecalho-nav {
+    margin: 1em;
+}
+
+.icone-nav {
+    padding-left: 1em;
+    text-decoration: none;
+}
+
+.campo-busca::placeholder {
+    color: var(--cinzinha);
+}
+
+.campo-busca:focus {
+    outline: none;
+}
+
+/* Menu de Links: Produtos, Serviços, Promoções e ClubPet */
+.menu-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.menu-item {
+    width: 200px;
+    text-align: center;
+}
+
+.menu-item-a, 
+.botao-links-a {
+    margin: 1em;
+}
+
+.menu-item a {
+    color: var(--cinza);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 2em;
+}
+
+.menu-item a:hover {
+    color: var(--roxo);
+}
+
+.menu-item a:visited {
+    color: var(--roxo);
+}
+
+/* Organizando os botões: Banho e Tosa, Veterinário, Adestramento e ClubPet */
+.botao-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botao-links-div {
+    padding: 1em;
+}
+
+/* Organizando Info: Tele-Busca, Pagamento e Frete */
+.botao-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.botao-info li {
+    padding: 1em;
+}
+
+.botao-info-div {
+    width: 300px;
+    height: 62px;
+    background-color: var(--lilas20);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.icone-info {
+    padding: 0 1em;
+}
+
+/* Organizando os Cards de Produto */
+.produto {
+    padding: 0 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.card-produto {
+    width: 350px;
+    height: 595px;
+    border-radius: 8px;
+    border: solid 2px var(--sombra);
+    padding: 1em;
+    transition: box-shadow 0.6s ease;
+}
+
+.card-produto:hover {
+    box-shadow: inset 0 0 0 4px var(--sombra);
+}
+
+.card-botao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-produto {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.descricao-produto,
+.descricao-valor {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.descricao-valorclub {
+    padding: 0 1em;
+}
+
+.valorclub {
+    display: flex;
+    align-items: center;
+}
+
+.preco-club {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.1em;
+}
+
+.club-img {
+    padding-right: 0.5em;
+}
+
+.card-botao {
+    padding: 1em;
+}
+
+.descricao-ou {
+    padding: 0 0.5em;
+}
+
+/* Organizando Favoritos dos Cachorros e Gatos */
+.favoritos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    text-transform: uppercase;
+}
+
+.favoritos-div {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fav-div {
+    padding: 0.5em 0;
+}
+
+/* Organizando "Baixe o Nosso APP" */
+.app {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 5em;
+}
+
+.img-app {
+    text-align: center;
+}
+
+.img-app,
+.descricao-app {
+    flex: 1;
+}
+
+.li-app {
+    margin-top: 2em;
+}
+
+.div-app {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5em;
+}
+
+.paragrafo {
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.icon-app {
+    padding-right: 0.5em;
+}
+
+.download-app {
+    display: flex;
+}
+
+.download-icon {
+    padding-top: 2em;
+    padding-right: 1em;
+}
+
+/* Organizando Rodapé */
+.cabecalho-links-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-item-rodape a {
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 2em;
+}
+
+.menu-item-rodape a:hover {
+    color: var(--lilas);
+}
+
+.menu-item-rodape a:visited {
+    color: var(--lilas);
+}
+
+.redes-social {
+    display: flex;
+    align-items: center;
+}
+
+.icon-social {
+    padding-right: 0.5em;
+}
+
+.cadastre {
+    flex-wrap: wrap;
+    width: 450px;
+}
+
+.cadastre p {
+    margin-top: 0.5em;
+}
+
+/* Página de Login */
+.tela-login {
+    padding: 2em 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

@@ -25,3 +25,37 @@ Todo o código foi estruturado em arquivos conforme as aulas da disciplina, com 
 [Projeto PetShop no Figma](https://www.figma.com/file/kqkGVrQG0QOsX7LmcZvJhC/%F0%9F%93%98-PUCRS-(Fundamentos-de-Sistemas-Web)---PETSHOP?type=design&node-id=50%3A1002&mode=design&t=DSH32OjxNr9MjvtA-1)
 
 Este documento Read Me serve como uma visão geral do projeto e suas principais características. Para detalhes mais específicos, consulte o código-fonte e os arquivos do projeto.
+
+---
+# PetShop Online
+
+Este é o repositório do projeto "PetShop Online", desenvolvido como parte do curso de Fundamentos de Sistemas Web da PUCRS. A plataforma é um sistema web de comércio de produtos e serviços para PetShop.
+
+## Funcionalidades
+
+Aqui estão algumas das principais funcionalidades da página web:
+
+### Cabeçalho (Header)
+
+- O cabeçalho contém informações sobre a PetShop, como o nome, logo e links de navegação para diferentes páginas.
+- Também inclui opções para o cadastro de usuários e outras informações importantes.
+
+### Visualização de Produtos e Serviços
+
+- Os produtos (ração seca e ração úmida) e serviços (banho e tosa) são exibidos de forma atraente, com fotos, descrições e preços.
+- Utiliza um carrossel e funções temporais para apresentar os produtos de forma dinâmica.
+
+### Formulário de Cadastro do Cliente e do Pet
+
+- O formulário de cadastro permite que os clientes preencham informações pessoais, como nome, endereço, telefone e e-mail.
+- Também inclui campos para o cadastro do pet, como nome, tipo, raça e temperamento.
+
+### Escolha de Serviços com Agendamento
+
+- Os clientes podem escolher os serviços desejados e agendar horários para banho e tosa.
+- Há opção para tele-busca, permitindo que o cliente solicite o serviço de busca para levar o pet ao PetShop.
+
+### Rodapé (Footer)
+
+- O rodapé contém informações legais de autoria, contato e links de navegação adicionais.
+- Fornece uma maneira rápida de acessar outras partes do site e entrar em contato com a equipe.
